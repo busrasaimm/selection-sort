@@ -1,0 +1,26 @@
+[22,27,16,2,18,6]
+Başlangıç elemanı olarak dizinin ilk elemanı olarak 22 seçilir.
+Daha sonra 22 ile 27 kıyaslanır. 22 < 27 olduğu için 22 başa alınır ve 27 ikinci sıraya yerleşir. 
+Küçük eleman olan 22 birinci eleman olarak kalmaya devam eder. Dizinin son hali [22,27,16,2,18,6]olur.
+Şimdi de üçüncü eleman olan 16 ile 27 kontrol edilir. 16 < 27 ancak aynı zamanda 16 < 22 olduğundan 16 sayısı en başa alınır ve sayılar sırasına göre kaydırılır. Dizinin son hali [16,22,27,2,18,6]olur.
+Bu adımda da sıra dördüncü eleman yani 2 sayısına bakmaya gelmiştir. 2 hepsinden küçük olduğu için direk sola kaya kaya en başa yerleşir ve diğer sayılarda birer sağa kayarak kendi sırasını alırlar Dizinin son hali [2,16,22,27,18,6] olur.
+Bu adımda sıralanmak üzere beşinci elamana bakılır. Yani karşılığında bulunan eleman 18’dir. 18 sayısı solundaki 2,16,22,27, ile kontrol edilir ve kendi yerine araya girer.Dizinin son hali [2,16,18,22,27,6] olur.
+Bu adımı son adım olarak düşünebiliriz. Burada da dizinin altıncı elemanı olan 6 kontrol edilir.
+Altıncı ve son eleman olan 6 için içinde aynı kontroller yapıldıktan sonra  araya girerek kendisine ait olan sırasında yerini alır.Dizinin oluşan son hali [2,6,16,18,22,27] olur.
+Bu sort'un big o gösterimi o(n²)dir.
+Average case: Aradığımız sayının ortada olması; bu açıklama doğruldusunda 18 sayısı average case kapsamına girer.
+
+
+[7,3,5,8,2,9,4,15,6]
+
+1.adım : [2,3,5,8,7,9,4,15,6]
+
+2.adım : [2,3,4,8,7,9,5,15,6]
+
+3.adım : [2,3,4,5,7,9,8,15,6]
+
+4.adım : [2,3,4,5,6,9,8,15,7]
+
+5.adım : [2,3,4,5,6,7,8,15,9]
+
+6.adım : [2,3,4,5,6,7,8,9,15]
